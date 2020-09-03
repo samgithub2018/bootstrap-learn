@@ -1,0 +1,80 @@
+/*
+ * 公共央视，为了央视不冲突，给元素加上ID：section.id='main id'
+ */
+booy {
+    font-family: "Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif;
+}
+
+/*
+ * 声明字体
+ * https://icomoon.io/app/#/select/font
+ */
+@font-face {
+    font-family: "copperFont";
+    src: url("../font/icomoon.eot") format('embedded-opentype'), url("../font/icomoon.svg") format('svg'), url("../font/icomoon.ttf") format('truetype'), url("../font/icomoon.woff") format('woff');
+}
+[class^="icon-"],
+[class*=" icon-"] {
+    font-family: copperFont;
+    color: #3cc7ff;
+    /*让字体图标斜体形式变为正常*/
+    font-style: normal;
+}
+.icon-users::before {
+    content: "\e972";
+}
+.icon-bubbles::before {
+    content: "\e96c";
+    font-size: 12px;
+}
+.icon-phone_in_talk::before {
+    content: "\e61d";
+}
+.icon-phone_iphone::before {
+    content: "\e325";
+}
+
+/*
+ * 头部区域
+ */
+#header {
+    height: 200px;
+    background-color: #E5E5E5;
+}
+
+#header > .topbar {
+    height: 36px;
+    line-height: 36px;
+    background-color: #F5F5F5;
+}
+
+//微信联系方式二维码
+#header .link {
+    color: #676767;
+}
+#header .link:hover {
+    text-decoration: none;
+}
+#header .phone_iphone_link {
+    display: block;
+}
+#header .phone_iphone_link > img {
+    display: none;
+}
+#header .phone_iphone_link:hover > img {
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -60px;
+    top: 30px;
+}
+
+//section 区域
+
+section {
+    height: 200px;
+    background-color: #FFFFFF;
+}
+section:nth-of-type(2n-1) {
+    background-color: yellow;
+}

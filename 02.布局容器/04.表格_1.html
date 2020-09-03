@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>X-editable starter template</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- bootstrap -->
+		<link href="/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="~/js/bootstrap-editable/css/bootstrap-editable.css" rel="stylesheet" />
+		
+		<script src="~/js/jquery/jquery.min.js" ></script>		
+		<script src="~/js/bootsrtap/bootstrap.min.js"></script>		
+		<script src="~/js/bootstrap-editable/js/bootstrap-editable.min.js"></script>
+
+		<!-- main.js -->
+		<script src="main.js"></script>
+	</head>
+
+	<body>
+
+		<a href="#" id="username" data-type="text" data-title="用户名">用户名</a>
+
+		$(function () { 
+			$('#username').editable(); });
+	</body>
+
+</html>
